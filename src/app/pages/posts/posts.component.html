@@ -3,12 +3,9 @@
 
   <h1>Posts</h1>
   <ul class="list-gruop">
-    <li class="list-group-item" *ngFor="let post of mensajes | async">
-      <h1>{{post.title}}</h1>
-      <p>
-        {{post.body}}
-      </p>
-    </li>
+
+    <app-post *ngFor="let mensaje of mensajes | async"
+    [mensaje]="mensaje" ></app-post>
   </ul>
 </div>
 
