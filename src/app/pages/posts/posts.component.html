@@ -1,11 +1,11 @@
-<div class="">
+<div>
   <p>posts works!</p>
 
-  <h1>Posts</h1>
+  <h1>Listado</h1> <br>
   <ul class="list-gruop">
 
     <app-post *ngFor="let mensaje of mensajes | async"
-    [mensaje]="mensaje" ></app-post>
+    [mensaje]="mensaje" (clickPost)="escuchaClick($event)" ></app-post>
   </ul>
 </div>
 
