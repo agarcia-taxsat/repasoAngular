@@ -21,6 +21,10 @@ const routes: ROUTES = [
     component: ContactComponent
   },
   {
+    path: 'posts',
+    loadChildren: './pages/posts/posts.module#PostsModule'
+  },
+  {
     path: '**',
     redirectTo: 'home'
   }
