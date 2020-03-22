@@ -1,1 +1,13 @@
-<p>posts works!</p>
+<div class="">
+  <p>posts works!</p>
+
+  <h1>Posts</h1>
+  <ul class="list-gruop">
+    <li class="list-group-item" *ngFor="let post of pos">
+      <p>{{post.userId}}</p><br>
+      <p>{{post.id}}</p><br>
+      <p>{{post.title}}</p><br>
+    </li>
+  </ul>
+</div>
+

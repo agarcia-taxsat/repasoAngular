@@ -1,5 +1,7 @@
-<ul class="list-group">
-  <a [routerLink]="ruta.path" class="btn" *ngFor="let ruta of rutas">
+
+<ul >
+  <a [routerLink]="ruta.path" class="btn btn-primary btn-sm" *ngFor="let ruta of rutas">
     {{ruta.name}}
   </a>
 </ul>
+
