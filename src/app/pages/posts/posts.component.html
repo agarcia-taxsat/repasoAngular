@@ -3,10 +3,11 @@
 
   <h1>Posts</h1>
   <ul class="list-gruop">
-    <li class="list-group-item" *ngFor="let post of pos">
-      <p>{{post.userId}}</p><br>
-      <p>{{post.id}}</p><br>
-      <p>{{post.title}}</p><br>
+    <li class="list-group-item" *ngFor="let post of mensajes | async">
+      <h1>{{post.title}}</h1>
+      <p>
+        {{post.body}}
+      </p>
     </li>
   </ul>
 </div>

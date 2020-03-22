@@ -8,14 +8,11 @@ import {DataService} from '../../services/data.service';
 })
 export class PostsComponent implements OnInit {
 
-  pos: any;
+  mensajes: any;
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.dataService.getData().subscribe(
-      posts => {
-        this.pos = posts;
-      });
+    this.mensajes = this.dataService.getData();
   }
 
 }
